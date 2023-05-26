@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.interno {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #D5A400;
+  padding: 20px 0;
+  background-image: url("../images/header-bg.png");
+  background-position: center 20%;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+header .logo img {
+  width: 200px;
+}
+header .content {
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+header .content .esquerda {
+  width: 70%;
+  position: relative;
+  z-index: 2;
+}
+header .content .esquerda h1 {
+  color: white;
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 24px;
+  font-family: "Signika", sans-serif;
+}
+header .content .esquerda h1 span {
+  font-size: 60px;
+  text-shadow: 5px 5px 2px rgba(100, 131, 57, 0.76);
+}
+header .content .esquerda h1 p {
+  color: #648339;
+  font-size: 85px;
+}
+header .content .esquerda h4 {
+  color: #666666;
+  width: 80%;
+  font-size: 22px;
+  margin-bottom: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+header .content .esquerda button {
+  background-color: #6CBD20;
+  padding: 10px 20px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Signika", sans-serif;
+  transition: 0.5s;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.2s;
+}
+header .content .esquerda button:hover {
+  background-color: #324e18;
+  transition: 0.5s;
+}
+header .content .esquerda button:active {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.2s;
+}
+header .content .direita img[src="./images/folha1.png"] {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  width: 50%;
+  z-index: 1;
+}
+header .content .direita img[src="./images/folha2.png"] {
+  position: absolute;
+  top: 0;
+  right: 12%;
+  width: 50%;
+  z-index: 1;
+}
+header .content .direita img[src="./images/folha3.png"] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  z-index: 1;
+}
+
+.vantagens {
+  margin-bottom: 300px;
+}
+.vantagens .caixas {
+  margin-top: -60px;
+  z-index: 2;
+  position: relative;
+}
+.vantagens .caixas .up {
+  display: flex;
+}
+.vantagens .caixas .down {
+  display: flex;
+}
+.vantagens .caixas .box {
+  background-color: #D5A400;
+  width: 400px;
+  padding: 40px 22px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0 20px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.vantagens .caixas .box .sob {
+  display: flex;
+  margin-bottom: 12px;
+}
+.vantagens .caixas .box .sob h2 {
+  font-weight: bolder;
+}
+.vantagens .caixas .box .sub p {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+.vantagens .caixas .box .sub .adocado {
+  font-size: 24px;
+}
+.vantagens .down2 {
+  display: flex;
+}
+.vantagens .down2 .esquerda {
+  position: relative;
+  width: 50%;
+}
+.vantagens .down2 .esquerda img {
+  position: absolute;
+  top: -220px;
+  left: -300px;
+  z-index: 999;
+  width: 1250px;
+  font-weight: bold;
+}
+.vantagens .down2 .direita {
+  width: 50%;
+  position: relative;
+}
+.vantagens .down2 .direita p {
+  font-family: "Signika", sans-serif;
+  color: #6CBD20;
+  font-size: 60px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 3;
+  padding: 150px 0;
+}
+
+.video {
+  background-color: #FCBB00;
+  padding: 250px 0;
+  position: relative;
+  z-index: 0;
+}
+.video .background2 img[src="./images/laranja2 4.png"] {
+  position: absolute;
+  top: -40px;
+  right: 340px;
+  width: 300px;
+}
+.video .background2 h2 {
+  color: white;
+  font-size: 46px;
+  font-family: "Signika", sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6784313725);
+  position: relative;
+  margin-bottom: 30px;
+}
+.video .background2 img[src="./images/Group 1.png"] {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140%;
+  z-index: 1;
+}
+.video .background2 iframe {
+  width: 800px;
+  height: 500px;
+  background-color: rgb(165, 163, 163);
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.575);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.575);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.575);
+  position: relative;
+  z-index: 2;
+}
+.video .background2 img[src="./images/laranja2 5.png"] {
+  position: absolute;
+  bottom: -80px;
+  left: 300px;
+  width: 450px;
+}
+
+.propaganda {
+  background-image: url("../images/laranjabg.png");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+.mercado {
+  background-image: url("../images/agricultor-agronomo-senior-trabalhador-no-campo-de-soja-verificando-as-colheitas-antes-da-colheita 1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mercado .bg {
+  background-color: rgba(81, 116, 24, 0.7137254902);
+  padding: 250px 0;
+}
+.mercado .bg h2 {
+  color: white;
+  font-size: 48px;
+  font-family: "Signika", sans-serif;
+  margin-bottom: 40px;
+}
+.mercado .bg .caixas {
+  display: flex;
+  justify-content: space-between;
+}
+.mercado .bg .caixas .box {
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(251, 176, 59);
+  background: linear-gradient(144deg, rgb(251, 176, 59) 0%, rgb(251, 176, 59) 62%, rgb(244, 112, 42) 100%);
+  border-radius: 12px;
+  color: white;
+  font-size: 28px;
+  text-align: left;
+  font-family: "Signika", sans-serif;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 1100px) {
+  header .logo img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header .content .esquerda h1 {
+    font-size: 35px;
+  }
+  header .content .esquerda h1 span {
+    font-size: 50px;
+  }
+  header .content .esquerda h1 p {
+    font-size: 75px;
+  }
+  header .content .esquerda h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 830px) {
+  header {
+    background-position: left;
+  }
+  header .content .esquerda h1 {
+    color: white;
+    font-size: 25px;
+    line-height: 45px;
+    margin-bottom: 24px;
+    font-family: "Signika", sans-serif;
+  }
+  header .content .esquerda h1 span {
+    font-size: 40px;
+    text-shadow: 5px 5px 2px rgba(100, 131, 57, 0.76);
+  }
+  header .content .esquerda h1 p {
+    color: #648339;
+    font-size: 65px;
+  }
+  header .content .esquerda h4 {
+    color: #666666;
+    width: 80%;
+    font-size: 16px;
+    margin-bottom: 32px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+  }
+  header .content .esquerda button {
+    background-color: #6CBD20;
+    padding: 10px 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Signika", sans-serif;
+    transition: 0.5s;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.2s;
+  }
+  header .content .esquerda button:hover {
+    background-color: #324e18;
+    transition: 0.5s;
+  }
+  header .content .esquerda button:active {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.2s;
+  }
+  header .content .direita img[src="./images/folha1.png"] {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    width: 50%;
+    z-index: 1;
+  }
+  header .content .direita img[src="./images/folha2.png"] {
+    position: absolute;
+    top: 0;
+    right: 12%;
+    width: 50%;
+    z-index: 1;
+  }
+  header .content .direita img[src="./images/folha3.png"] {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
