@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="arrastar">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
   <title>Document</title>
 </head>
 <body>
- <header>
+ <header class="section">
   <div class="interno">
    <div class="logo">
     <img src="./images/orange.png" alt="">
@@ -40,19 +40,19 @@
     </div>
    </div>
  </header>
- <section class="vantagens">
+ <section class="vantagens section">
   <div class="interno">
     <div class="caixas">
       <div class="up">
-        <div class="box">
+        <div class="box hvr-bob hvr-float-shadow" id="box">
           <div class="sob">
-            <i class="fa-sharp fa-solid fa-pipe"></i><i class="fa-sharp fa-light fa-citrus"></i>
+            <h2>|</h2><i class="fa-regular fa-citrus"></i>
           </div>
           <div class="sub">
             <p>100% de laranja</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box hvr-bob hvr-float-shadow">
           <div class="sob">
             <h2>|</h2><i class="fa-regular fa-flask-vial"></i>
           </div>
@@ -60,7 +60,7 @@
             <p>Sem conservantes</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box hvr-bob hvr-float-shadow">
           <div class="sob">
             <h2>|</h2><i class="fa-regular fa-nose"></i>
           </div>
@@ -71,7 +71,7 @@
       </div>
   
       <div class="down">
-        <div class="box">
+        <div class="box hvr-bob hvr-float-shadow">
           <div class="sob">
             <h2>|</h2><i class="fa-regular fa-cubes-stacked"></i>
           </div>
@@ -79,7 +79,7 @@
             <p>Sem açúcar</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box hvr-bob hvr-float-shadow">
           <div class="sob">
             <h2>|</h2><i class="fa-sharp fa-regular fa-seedling"></i>
           </div>
@@ -87,7 +87,7 @@
             <p class="adocado">Adoçado naturalmente</p>
           </div>
         </div>
-        <div class="box">
+        <div class="box hvr-bob hvr-float-shadow">
           <div class="sob">
             <h2>|</h2><i class="fa-solid fa-leaf-heart"></i>
           </div>
@@ -99,53 +99,53 @@
     </div>
   </div>
   <div class="down2">
-    <div class="esquerda">
-      <img src="./images/bottle2 1.png" alt="">
-    </div>
-    <div class="direita">
-      <p>Agora você pode sentir 
-        o melhor sabor do 
-        suco de Laranja, adoçado
-        com técnicas naturais.</p>
+    <div class="interno">
+      <div class="esquerda">
+        <img src="./images/bottle2 1.png" alt="">
+      </div>
+      <div class="direita">
+        <p>Agora você pode sentir 
+          o melhor sabor do 
+          suco de Laranja...</p>
+        <p>...adoçado
+          com técnicas naturais.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="video">
+<section class="video section">
   <div class="background2">
     <div class="interno">
-      <img src="./images/laranja2 4.png" alt="">
-      <h2>Veja uma rápida mostra de nossa produção</h2>
-      <img src="./images/Group 1.png" alt="">
-      <iframe src="" frameborder="0"></iframe>
-      <img src="./images/laranja2 5.png" alt="">
+      <div class="titulo">
+        <img src="./images/laranja2 4.png" alt="">
+        <h2>Veja uma rápida mostra de nossa produção</h2>
+      </div>
+      <div class="videoProprio">
+        <img src="./images/Group 1.png" alt="">
+        <iframe src="" frameborder="0"></iframe>
+        <img src="./images/laranja2 5.png" alt="">
+      </div>
     </div>
   </div>
+
+  <section class="propaganda">
+    <img src="./images/laranjabg.png" alt="">
+  </section>
 </section>
 
-<section class="propaganda">
-  <div class="interno">
-    <div class="esquerda">
-
-    </div>
-    <div class="direita">
-      <img src="" alt="">
-    </div>
-  </div>
-</section>
-
-<section class="mercado">
+<section class="mercado section">
   <div class="bg">
     <div class="interno">
       <h2>A melhor bebida do mercado</h2>
       <div class="caixas">
-        <div class="box">
+        <div class="box hvr-ripple-out">
           <p>Nosso suco é a principal fonte 
             de ingestão de vitamina C e de 
             flavonoides com ação 
             antioxidante e anti-inflamató­ria.</p>
         </div>
-        <div class="box">
+        <div class="box hvr-ripple-out">
           <p>Livre de agrotóxicos, plantada de 
             forma totalmente natural. É a 
             mais pura laranja do mercado 
@@ -155,5 +155,62 @@
     </div>
   </div>
 </section>
+
+<section class="combos">
+  <div class="interno">
+    <h2>O suco mais gostoso,<br>
+      com o melhor preço.</h2>
+
+    <div class="blocos">
+      <div class="box um">
+        <h2>Combo
+          12 unidades</h2>
+      </div>
+      <div class="box dois">
+        <h2>Combo
+          6 unidades</h2>
+      </div>
+      <div class="box">
+        <h2>Combo
+          3 unidades</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compraUnica">
+  <div class="interno">
+    <div class="esquerda">
+      <h2>Quer comprar apenas 1 orange?</h2>
+      <p>Nós estamos perto de você.</p>
+      <button><i class="fa-sharp fa-solid fa-cart-shopping"></i> Verifique o mercado mais próximo!</button>
+    </div>
+    <div class="direita">
+      <img src="./images/garrafa.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="interno">
+    <h2>FAQ - Perguntas frequentes</h2>
+
+    <div class="perguntas">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="interno">
+    <p>orange - Todos os direitos reservados.</p>
+    <p>Desenvolvido por Diego Fernando</p>
+  </div>
+</footer>
 </body>
+<script src="./script.js"></script>
 </html>
